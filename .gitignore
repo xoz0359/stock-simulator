@@ -1,0 +1,52 @@
+HELP.md
+.gradle
+build/
+##환경 변수, 보안 파일 제외
+application.properties
+application.yml
+.env
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+##테스트 결과/ jacoco 코드 커버리지 리포트 제외
+test-output/
+jacoco.exec
+jacoco.csv
+jacoco.html
+
+##Checkstyle, SonarQube 관련 파일 제외
+.checkstyle/
+.sonar/
+
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
